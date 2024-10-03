@@ -1,0 +1,90 @@
+:root{
+    --background-colour: #ead93d;
+    --border-width: 2px;
+}
+
+.creature-card{
+    border: solid var(--border-width);
+    padding: 50px;
+    background-color: var(--background-colour);
+}
+
+.name, 
+.taxa {
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.name>img{
+    aspect-ratio: 1/1;
+    height: 2vh;
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.name div,
+.taxa div {
+    border: solid 2px;
+    display: inline-block;
+}
+
+.name p,
+.taxa p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.name input,
+.taxa input{
+    box-sizing: border-box;
+    background-color: var(--background-colour);
+    width: 50%;
+    border: 0px;
+    padding: 0px;
+    padding-left: 10%;
+    font-size: calc(1.5vw + 1.5vh - 0.5px) ;
+    height: 100%;
+}
+
+.stats input::-webkit-outer-spin-button,
+.stats input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.stats input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.mobility {
+    grid-column: 2 / span 2;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.mobility>div {
+    display: inline-block;
+}
+
+.mobility>div:not(:nth-child(2)) {
+    border: solid var(--border-width);
+    padding: 1.5vh 20.2%;
+}
+
+.mobility>div:nth-child(2) {
+    position: absolute;
+    background-color: var(--background-colour);
+}

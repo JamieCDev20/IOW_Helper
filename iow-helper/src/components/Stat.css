@@ -1,0 +1,31 @@
+:root{
+    --title-bg-colour: #1b1b1b;
+    --background-colour: #ead93d
+}
+
+.stat {
+    border: solid 2px;
+    text-align: center;
+    background-color: var(--title-bg-colour);
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    box-sizing: border-box;
+    width: 60%;
+    color: white;
+    display: inline-block;
+    font-size: calc(2vw + 2vh) ;
+}
+
+.val {
+    box-sizing: border-box;
+    background-color: var(--background-colour);
+    width: 40%;
+    border: 0px;
+    padding: 0px;
+    padding-left: 10%;
+    font-size: calc(2vw + 2vh - 0.5px) ;
+    height: 100%;
+}
